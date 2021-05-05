@@ -27,11 +27,11 @@ public class Hello {
         Object inputJSON = JsonUtils.jsonToObject(input);
         Object transformedOutput = chainr.transform( inputJSON );
         System.out.println(transformedOutput);
-        // JsonObject response = new JsonObject();
-        // response.addProperty("Transformed output",JsonUtils.toJsonString( transformedOutput ));
-        // return response;
-     JsonObject response = new JsonObject();
-      response.addProperty("out","out");
-      return response;
+        JsonObject response = new JsonObject();
+        response.addProperty("Transformed output",JsonUtils.toJsonString( transformedOutput ));
+        return response;
+//      JsonObject response = new JsonObject();
+//       response.addProperty("out","out");
+//       return response;
     }
 }
